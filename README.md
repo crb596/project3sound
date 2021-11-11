@@ -1,4 +1,4 @@
-Documentation
+## Documentation
 
 **Project Name:** 
 Virtual Travel Experience 
