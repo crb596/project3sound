@@ -143,7 +143,10 @@ const sounds = [
   ambienceBali,
   summerAmbience,
   winterAmbience,
-  summerCity
+  summerCity,
+  winterCity,
+  summerNature,
+  winterNature
 ];
 
 
