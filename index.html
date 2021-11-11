@@ -8,10 +8,30 @@
   </head>
 
   <body>
+    <div id="restart" onclick="restart()">
+      <img id="restartIcon" src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Frestart.png?v=1636605269460">
+    </div>
+     <div class="optionWindows">
+      <!-- start page + options -->
+      <div class="options" id="startpage">
+        <h1>First, may I know your age?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fage.jpg?v=1636465335193"
+          alt="Image Place Holder"
+        />
 
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <input id="buttonOne"
+              onclick="changeQuestion(1);"
+              type="button"
+              style="height:100px;width:200px"
+                   value="-20"
+            >
+          </p>
     <div class="dialWindow">
-         <div class="options" id="questionZero">
-          <audio id="phoneCallsound">
+      <div class="options" id="questionZero">
+        <audio id="phoneCallsound">
             <source src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fphonecall.mp3?v=1636466405704">
         </audio>
         <h1>
@@ -20,7 +40,7 @@
         <img src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fphonecall.gif?v=1636547433339"/>
 
         <div class="button_container" id="phoneCall">
-          <p align="center">
+          <p align="center" id="phoneCallContainer">
               <button 
                   onclick="changeQuestion(1)"
                   Type="buttonOne"
@@ -297,7 +317,7 @@
           alt="Image Place Holder"
         />
       </div>
-      <div class="result" id="southkorea">
+      <div class="result" id="korea">
         <h1 align="center">Thanks for your answers! We recomend a trip to Jeju Island South Korea. Have fun!</h1>
         <img
           src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fsouthkorea.jpg?v=1636463512753"
