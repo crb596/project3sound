@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>CL Travel Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Trispace" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="dialWindow">
+         <div class="options" id="questionZero">
+          <audio id="phoneCallsound">
+            <source src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fphonecall.mp3?v=1636466405704">
+        </audio>
+        <h1>
+            Receiving Phone Call...
+        </h1>
+        <img src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fphonecall.gif?v=1636547433339"/>
+
+        <div class="button_container" id="phoneCall">
+          <p align="center">
+              <button 
+                  onclick="changeQuestion(1)"
+                  Type="buttonOne"
+                  style="height:100px;width:200px"
+                >
+                  Accept
+                </button>
+            </p>
+        </div>
+    </div>
+
+    <div class="optionWindows">
+      <!-- first question + options -->
+      <div class="options" id="questionOne">
+        <h1>First, may I know your age?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fage.jpg?v=1636465335193"
+          alt="Image Place Holder"
+        />
+
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <input id="buttonA"
+              onclick="changeQuestion(21);"
+              type="button"
+              style="height:100px;width:200px"
+                   value="-20"
+            >
+          </p>
+
+          <p align="center">
+            <input id="buttonB"
+              onclick="changeQuestion(22);"
+              type="button"
+              style="height:100px;width:200px"
+                   value="21-30"
+            >
+          </p>
+
+          <p align="center">
+            <input id ="buttonC"
+              onclick="changeQuestion(23);"
+              type="button"
+              style="height:100px;width:200px"
+                   value="31-40"
+            >
+          </p>
+
+          <p align="center">
+            <input id="buttonD"
+              onclick="changeQuestion(24);"
+              type="button"
+              style="height:100px;width:200px"
+                   value="40+"
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- second question + options -->
+      <div class="options" id="questionTwo">
+        
+        <h1>Which weather do you prefer?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2FsummerWinter.jpg?v=1636463710894"
+          alt="Image Place Holder"
+        />
+
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <button
+              onclick="changeQuestion(3)"
+              type="buttonOne"
+              style="height:100px;width:200px"
+            >
+              Summer
+            </button>
+          </p>
+
+          <p align="center">
+            <button
+              onclick="changeQuestion(6)"
+              type="buttonTwo"
+              style="height:100px;width:200px"
+            >
+              Winter
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <!-- third question + options -->
+      <div class="options" id="questionThree">
+        <h1>Do you prefer nature or the city?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2FL6_Ch4_L9_Main2.jpg?v=1636464827271"
+          alt="Image Place Holder"
+        />
+
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <button
+              onclick="changeQuestion(5)"
+              type="buttonOne"
+              style="height:100px;width:200px"
+            >
+              City
+            </button>
+          </p>
+
+          <p align="center">
+            <button
+              onclick="changeQuestion(4)"
+              type="buttonTwo"
+              style="height:100px;width:200px"
+            >
+              Nature
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <!-- fourth question + options -->
+      <div class="options" id="questionFour">
+        <h1>Finally, which activity do you prefer?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fwatervhiking.jpg?v=1636464853141"
+          alt="Image Place Holder"
+        />
+
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <button onclick="result('bali')" type="buttonOne" style="height:100px;width:200px">
+              Water Leisure
+            </button>
+          </p>
+
+          <p align="center">
+            <button onclick="result('korea')" type="buttonTwo" style="height:100px;width:200px">
+              Hiking
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <!-- fifth question + options -->
+      <div class="options" id="questionFive">
+        <h1>Finally, which activity do you prefer?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Flandmarkvfood.jpg?v=1636464832474"
+          alt="Image Place Holder"
+        />
+
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <button onclick="result('japan')" type="buttonOne" style="height:100px;width:200px">
+              Landmarks
+            </button>
+          </p>
+
+          <p align="center">
+            <button onclick="result('taiwan')" type="buttonTwo" style="height:100px;width:200px">
+              Food Trip
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <!-- sixth question + options -->
+      <!--     From here is for winter -->
+      <div class="options" id="questionSix">
+        <h1>Do you prefer nature or the city?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2FL6_Ch4_L9_Main2.jpg?v=1636464827271"
+          alt="Image Place Holder"
+        />
+
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <button
+              onclick="changeQuestion(8)"
+              type="buttonOne"
+              style="height:100px;width:200px"
+            >
+              City
+            </button>
+          </p>
+
+          <p align="center">
+            <button
+              onclick="changeQuestion(7)"
+              type="buttonTwo"
+              style="height:100px;width:200px"
+            >
+              Nature
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <!-- Seventh question + options -->
+      <div class="options" id="questionSeven">
+        <h1>Finally, which activity do you prefer?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fcampingvskiing.jpg?v=1636464816387"
+          alt="Image Place Holder"
+        />
+
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <button onclick="result('finland')" type="buttonOne" style="height:100px;width:200px">
+              Camping
+            </button>
+          </p>
+
+          <p align="center">
+            <button onclick="result('switzerland')" type="buttonTwo" style="height:100px;width:200px">
+              Ski, Snowboarding
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <!-- Eighth question + options -->
+      <div class="options" id="questionEight">
+        <h1>Finally, which activity do you prefer?</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fskatingvlandmark.jpg?v=1636464845702"
+          alt="Image Place Holder"
+        />
+
+        <div class="button_container" id="summer_winter">
+          <p align="center">
+            <button onclick="result('turkey')" type="buttonOne" style="height:100px;width:200px">
+              Landmarks
+            </button>
+          </p>
+
+          <p align="center">
+            <button onclick="result('newyork')" type="buttonTwo" style="height:100px;width:200px">
+              Ice Skating
+            </button>
+          </p>
+        </div>
+      </div>
+      
+      <!--    Below are all the possible results    -->
+      
+      <div class="result" id="bali">
+        <h1 align="center">Thanks for your answers! We recomend a trip to Bali Indonesia. Have fun!</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fbali.jpg?v=1636463388928"
+          alt="Image Place Holder"
+        />
+      </div>
+      <div class="result" id="finland">
+        <h1 align="center">Thanks for your answers! We recomend a trip to Rovaniemi Finland. Have fun!</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Ffinland.jpg?v=1636463450342"
+          alt="Image Place Holder"
+        />
+      </div>
+      <div class="result" id="japan">
+        <h1 align="center">Thanks for your answers! We recomend a trip to Osaka Japan. Have fun!</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fjapan.jpg?v=1636463506454"
+          alt="Image Place Holder"
+        />
+      </div>
+      <div class="result" id="newyork">
+        <h1 align="center">Thanks for your answers! We recomend a trip to New York USA. Have fun!</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fnewyork.jpg?v=1636463509793"
+          alt="Image Place Holder"
+        />
+      </div>
+      <div class="result" id="southkorea">
+        <h1 align="center">Thanks for your answers! We recomend a trip to Jeju Island South Korea. Have fun!</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fsouthkorea.jpg?v=1636463512753"
+          alt="Image Place Holder"
+        />
+      </div>
+      <div class="result" id="switzerland">
+        <h1 align="center">Thanks for your answers! We recomend a trip to Jungfraujoch Switzerland. Have fun!</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fswitzerland.jpg?v=1636463519317"
+          alt="Image Place Holder"
+        />
+      </div>
+      <div class="result" id="taiwan">
+        <h1 align="center">Thanks for your answers! We recomend a trip to Taipei Taiwan. Have fun!</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Ftaiwan.jpg?v=1636463522858"
+          alt="Image Place Holder"
+        />
+      </div>
+      <div class="result" id="turkey">
+        <h1 align="center">Thanks for your answers! We recomend a trip to Istanbul Turkey. Have fun!</h1>
+        <img
+          src="https://cdn.glitch.me/b23d6624-0186-402c-a8fd-860d2aa897ba%2Fturkey.jpg?v=1636463527855"
+          alt="Image Place Holder"
+        />
+      </div>
+      
+      
+    </div>
+
+    <div class="finalScreen"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
